@@ -1,0 +1,59 @@
+
+
+
+.container form {
+    background-color: white;
+    color: #888888;
+    text-align: left;
+    padding-top: 20px;
+  }
+  
+  .container label {
+    display: none;
+  }
+  
+  .container input,
+  .container textarea {
+    /* to create space for placing icon*/
+    padding-left: 32px;
+    border-color: transparent;
+    background-color: #98afb0;
+    border-radius: 0px;
+  }
+  
+  .container .btn-default {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding: 15px 36px;
+    background-color: #14098f;
+    border-radius: 0px;
+    border: 0px;
+    color: #F1F1F1;
+  }
+  
+  .container .btn-default:hover,
+  .container .btn-default:focus {
+    background-color: #049DDF;
+    color: #F1F1F1;
+    border-color: transparent;
+    outline: 0px auto -webkit-focus-ring-color;
+  }
+  
+  /*position should be relative and z-index greater than one*/
+  .container .icon {
+    position: relative;
+    float: left;
+    margin-left: 8px;
+    margin-top: -24px;
+    z-index: 2;
+    color: #222222;
+  }
+  
+  .container .icon-textarea {
+    float: left;
+    margin-left: 8px;
+    margin-top: -104px;
+    position: relative;
+    z-index: 2;
+    color: #222222;
+  }

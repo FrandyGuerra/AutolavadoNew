@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autolavado Guerra Bastidas Asociados</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+  </head>
+  <body>
+    <div class="encabezado">
+        
+      <img class="imagen-logo" src="https://us.123rf.com/450wm/andyadi/andyadi1811/andyadi181100011/114214023-servicio-de-lavado-de-coches-vector-logo-dise%C3%B1o-plantilla-inspiraci%C3%B3n-o-ilustraci%C3%B3n.jpg?ver=6" alt="logo">
+      <h2  class="titulo pt-4">CARWASH FABIANZA</h2>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">CARWASH</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#servicios">Nuestros Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="OrdenTrabajo.html">Orden de Trabajo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contactanos">Contactanos</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+    <form id="formulario" action="#">
+      <div class="container">
+        <div class="card mt-5 mb-5" style="width: 80%">
+          <div class="card-body">
+            <h3 class="text-center">Clientes</h3>
+            <div class="row">
+              <div class="col-md-10">
+                <label class="form-label" for="rut">RUT</label>
+                <input class="form-control" type="text" name="rut" id="rut" />
+              </div>
+              <div class="col-md-2">
+                <label class="form-label" for="digito">DV</label>
+                <input class="form-control" aria-describedby="error" type="text" name="digito" id="digito" />
+                <div id="error" class="form-text"></div>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-6">
+                <label class="form-label" for="nombre">Nombre</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="nombre"
+                  id="nombre"
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="apellido">Apellido</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="apellido"
+                  id="apellido"
+                />
+              </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-6">
+                  <label class="form-label" for="rut">Región</label>
+                  <select id="regiones" class="form-select" aria-label="Default select example">
+                    <option selected>Seleccione una Región</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="rut">Comuna</label>
+                  <select id="comunas" class="form-select" aria-label="Default select example">
+                    <option selected>Seleccione una comuna</option>
+                  </select>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col">
+                <label class="form-label" for="rut">Dirección</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="direccion"
+                  id="direccion"
+                />
+              </div>
+            </div>
+
+            <h3 class="text-center mt-3">Vehículo</h3>
+
+            <div class="row mb-3">
+                <div class="col-md-4">
+                  <label class="form-label" for="tipo">Tipo de vehículo</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Seleccione un Tipo</option>
+                    <option value="1">Furgón</option>
+                    <option value="2">Automóvil</option>
+                    <option value="3">Camión</option>
+                    <option value="3">Camioneta</option>
+                    <option value="3">Moto</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label" for="Marca">Marca</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Seleccione Marca</option>
+                      <option value="1">Chevrolet</option>
+                      <option value="2">Renault</option>
+                      <option value="3">Ford</option>
+                      <option value="3">Wolswagen</option>
+                      <option value="3">Fiat</option>
+                      <option value="3">Toyota</option>
+                      <option value="3">Otro</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label" for="modelo">Módelo</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="modelo"
+                      id="modelo"
+                    />
+                </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-4">
+                <label class="form-label" for="ano">Año</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="ano"
+                  id="ano"
+                />
+              </div>
+
+              <div class="col-md-8">
+              <label class="form-label" for="ano">Revision tecnica</label>
+              <div class="form-check">
+                <label class="form-check-label" for="inlineCheckbox1">SI</label>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                
+              </div>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label" for="inlineCheckbox1">NO</label>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+              </div>
+            
+              </div>
+            </div>
+            
+            <h3 class="text-center mt-3 mb-4">Tipo de Servicio</h3>
+            <div class="row">
+              <div class="col-md-6 mb-3" id="valores">
+                <div style="height:320px; background-color:rgb(179, 113, 240)" class="card">
+                  <div class="card-body">
+                    <h3>Lavado Interior y Exterior</h3>
+                    <p>Lavado con champu parte externa</p>
+                    <p>Lavado de tapiceria </p>
+                    <p>Barrido y lavado de alfombras</p>
+                    <p>Secado y pulido</p>
+                    <div class="text-center">
+                      <input type="checkbox" name="interior_exterior" value="7000" id="valor_interior_exterior">$7.000
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div style="height:320px; background-color:rgb(179, 113, 240)" class="card">
+                  <div class="card-body">
+                    <h3>Lavado de Motor</h3>
+                    <p>Limpieza con Agua </p>
+                    <p>Desengrasante para las piezas metalicas</p>
+                    <p>Limpieza y secado del motor</p>
+                    <p class="pb-4">Lavado y engrase algunas piezas</p>
+                    <div class="text-center">
+                      <input type="checkbox" name="motor" value="15000" id="valor_motor">$15.000
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div>
+                  
+            <div class="row mt-3 mb-3">
+              <div class="col-md-3">
+                <label class="form-label" for="tipo">Encargado</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Seleccione Encargado</option>
+                    <option value="1">Frandy</option>
+                    <option value="2">Marianny</option>
+                    <option value="3">José</option>
+                    <option value="3">Francisca</option>
+                    <option value="3">Carmen</option>
+                  </select>
+                
+              </div>
+              <div class="col-md-3"> 
+                <label class="form-label" for="Fecha">Fecha/hora</label>
+                <input
+                  class="form-control"
+                  type="datetime-local"
+                  name="fecha"
+                  id="fecha"
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="">Total a Pagar: </label>
+                $<input name="total" class="form-control"  id="total" disabled>
+              </div>
+              </div>
+              
+              
+          
+              
+            </div>
+
+            <div  class="text-center mb-3" id="btnEnviar">
+              <button id="enviarFormulario" type="submit" class="btn btn-primary">Enviar</button>
+            </div>  
+          </div>
+
+          
+
+          </div>
+            
+          </div>
+      </div>
+    </form>
+
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/validacion.js"></script>
+  </body>
+</html>
